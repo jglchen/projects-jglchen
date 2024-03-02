@@ -1,0 +1,40 @@
+---
+title: 'Next.js 全端應用程式模擬 Laravel Chirper'
+description: '本專案嘗試使用 Next.js 全端應用功能來模擬 the Laravel BootCamp Demonstration。'
+siteurl: 'https://chirper-next-fullstack.vercel.app'
+source: 'https://github.com/jglchen/chirper-next-fullstack'
+docker: 'docker run -p 3000:3000 jglchen/user-next-fullstack'
+siteimg: 'pc-chirper-next-fullstack.png'
+locale: 'zh-tw'
+tags:
+  - Nodejs
+  - Reactjs
+  - Nextjs
+  - Tailwind_CSS
+  - Theme_Toggling
+  - Prisma
+skills:
+  - css
+  - tailwindcss
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - sql
+  - mysql
+  - docker
+  - restapi
+priority: 178
+---
+
+[The Laravel Bootcamp](https://bootcamp.laravel.com/) 展示了[使用 Blade](https://bootcamp.laravel.com/blade/installation)、[使用 Livewire](https://bootcamp.laravel.com/livewire/installation) 以及[使用 JavaScript 和 Inertia](https://bootcamp.laravel.com/inertia/installation) 建立名為 Chirper 的微型部落格平台的三種不同方法。
+
+本專案嘗試**使用 Next.js 全端應用功能來模擬 [the Laravel BootCamp Demonstration](https://bootcamp.laravel.com/)**。Next.js React 前端網頁採用 Tailwind CSS 來進行樣式設計，並遵循 Laravel BootCamp 的視圖設計。在這個專案中，Prisma作為ORM用於管理資料庫，就像Eloquent用來連接Laravel和資料庫。
+
+本專案基本上遵循Laravel Bootcamp 所展示的構思，並添加了一些額外的功能，如下所示：
+- Chirper 顯示網頁載入了捲動分頁機制。
+- Chirper 頁面載入後將定期更新內容。
+- 提供用戶追蹤和取消追蹤其他用戶的機制。
+- Laravel Bootcamp 展示過當用戶建立一則 Chirp 時系統會發送電子郵件通知給其他用戶的機制，在本專案中，我們將電子郵件通知限制為僅向該用戶的追蹤者發送。

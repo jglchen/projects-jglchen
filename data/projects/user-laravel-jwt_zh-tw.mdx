@@ -1,0 +1,36 @@
+---
+title: 'Laravel API JWT 身份驗證 與 Next.js 前端'
+description: '本專案嘗試使用 Laravel JWT API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端。'
+source: 'https://github.com/jglchen/user-laravel-jwt'
+docker: 'docker run -it -p 8000:8000 jglchen/laravel-auth-jwt php artisan serve --host=0.0.0.0 (server site) | docker run -p 3000:3000 jglchen/user-next-jwt (client site)'
+siteimg: 'pc-user-laravel-jwt.png'
+locale: 'zh-tw'
+tags:
+  - PHP
+  - Laravel
+  - Reactjs
+  - Nextjs
+  - JWT-Authentication
+  - Tailwind_CSS
+  - Theme_Toggling
+skills:
+  - css
+  - tailwindcss
+  - html5
+  - javascript
+  - typescript
+  - reactjs
+  - nextjs
+  - sql
+  - mysql
+  - docker
+  - restapi
+  - php
+  - laravel
+priority: 165
+---
+
+Laravel 應用程式中提供了不同類型的 API 驗證系統，例如 Laravel Passport、Laravel sainttum，當然，您也可以使用 JWT 驗證。 在此 Laravel 10 的 JSON Web 符記驗證教程中，我們將使用 JWT 在 Laravel 中建立此 API 驗證。
+
+本專案嘗試**使用 Laravel JWT API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端**。JWT API 被引入以提供身份驗證系統。
+當使用 API 符記發出請求時，符記應作為 Bearer 符記被包含在授權(Authorization)標頭中。Next.js React 前端網頁採用 Tailwind CSS 來進行樣式設計，並遵循 Laravel Breeze 的預設視圖設計。

@@ -1,0 +1,39 @@
+---
+title: 'Hackernews 複製網站 - Apollo GraphQL'
+description: '使用 next.js 建立的 Hackernews 複製網站，實作 GraphQL API 和 Firebase Cloud Firestore 以取代 GraphQL 訂閱。'
+siteurl: 'https://hackernews-nextjs-apollo.vercel.app'
+source: 'https://github.com/jglchen/hackernews-nextjs-apollo'
+nativepub: 'https://exp.host/@jglchen/hackernews-apollo'
+nativesource: 'https://github.com/jglchen/react-native-hackernews-apollo'
+docker: 'docker run -p 3000:3000 jglchen/hackernews-nextjs-apollo'
+siteimg: 'pc-hackernews-nextjs-apollo.png'
+mobileimg: 'm-hackernews-apollo.png'
+locale: 'zh-tw'
+tags:
+  - Firebase
+  - Firestore
+  - Reactjs
+  - Nextjs
+  - React_Native
+  - GraphQL
+  - Apollo
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - react-native
+  - firebase
+  - docker
+  - graphql
+priority: 180
+---
+
+這是一個使用 **next.js** 實作 GraphQL API 建置的 [Hackernews](https://news.ycombinator.com/) 複製網站，前端採用 Apollo Client，後端採用 Apollo Server。 我們可以使用**next.js**成功建立 GraphQL 伺服器的完整功能，包括**查詢(queries)**、**突變(mutations)**和**訂閱(subscriptions)**。
+
+然而，一旦將套件部署到 Vercel（一個無伺服器平台），訂閱的即時通訊就無法正常運作。 因此，即時 [Firebase Cloud Firestore](https://firebase.google.com/products/firestore) 用於取代 GraphQL 訂閱。
+
+進一步，也提供 **iOS** 和 **Android** 行動應用程式。 這些應用程式是使用 **React Native** 開發的，任何有興趣的人都可以透過 [Expo Publish Link](https://exp.host/@jglchen/hackernews-apollo) 使用 [Expo Go](https://expo.dev/client) 測試應用程式。

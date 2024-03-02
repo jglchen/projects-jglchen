@@ -1,0 +1,33 @@
+---
+title: '使用 Firebase 雲端訊息傳遞的聊天應用程式'
+description: '使用 Firebase Cloud Messaging 與 Next.js 進行的即時聊天應用程式'
+siteurl: 'https://firebase-realtime-chat.vercel.app'
+source: 'https://github.com/jglchen/firebase-realtime-chat'
+docker: 'docker run -p 3000:3000 jglchen/firebase-realtime-chat'
+siteimg: 'pc-firebase-realtime-chat.png'
+locale: 'zh-tw'
+tags:
+  - Firebase
+  - Firebase-Cloud-Messaging
+  - Reactjs
+  - Nextjs
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - firebase
+  - docker
+  - restapi
+priority: 135
+---
+
+我們可以成功地在[Next.js](https://nextjs.org/)使用[Socket.IO](https://socket.io/)建立一個即時聊天應用程式。 然而，一旦將套件部署到 Vercel（一個無伺服器平台），即時通訊就無法正常運作。 Vercel 提出了兩種將即時模型應用於無狀態無伺服器函數(stateless serverless functions)的主要方法。
+
+1. 無伺服器函數(Serverless Functions)具有最大執行時間限制，並且應盡快回應。 他們不應該訂閱數據事件(data events)。 相反，我們需要一個訂閱資料事件(data events)的客戶端（例如 [Alby](https://ously.com/)、[Pusher](https://pusher.com/) 等）和一個無伺服器函數發布新數據。
+2. 我們可以按需獲取即時數據，而不是推送數據。 例如，Vercel 儀表板使用 [SWR](https://swr.vercel.app/) 提供即時更新。
+
+在此範例中，我們使用 [Firebase Cloud Messaging](https://firebase.google.com/products/cloud-messaging) 建立了一個即時聊天應用程式。 Firebase Cloud Messaging (FCM) JavaScript API 可讓您在支援 [Push API](https://www.w3.org/TR/push-api/) 的瀏覽器中執行的 Web 應用程式中接收通知訊息。 這包括此[支援矩陣](https://caniuse.com/push-api)中列出的瀏覽器版本以及透過 Push API 的 Chrome 擴充功能。

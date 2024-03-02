@@ -1,0 +1,41 @@
+---
+title: '網頁抓取示範'
+description: '一個 next.js 框架網站，用於展示使用 Node.js 進行網頁抓取的案例'
+siteurl: 'https://web-scrape.vercel.app'
+source: 'https://github.com/jglchen/web-scrape'
+nativepub: 'https://exp.host/@jglchen/web-scrape'
+nativesource: 'https://github.com/jglchen/react-native-web-scrape'
+docker: 'docker run -p 3000:3000 jglchen/web-scrape'
+siteimg: 'pc-web-scrape.png'
+mobileimg: 'm-web-scrape.png'
+locale: 'zh-tw'
+tags:
+  - Reactjs
+  - Nextjs
+  - Nodejs
+  - Cheerio
+  - Puppeteer
+  - React_Native
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - react-native
+  - docker
+  - restapi
+priority: 170
+---
+
+這是一個 **[next.js](https://nextjs.org/)** 框架網站，用於展示網頁抓取案例和我在網頁抓取方面的專業知識。 目前共有 9 個抓取案例，它們在 **[node.js](https://nodejs.org/en/)** 的 API 路徑中處理。
+
+抓取網路有兩種主要方法： 
+1. 用於查詢網路和資料提取的 HTTP 用戶端
+2. headless瀏覽器
+
+對於第一種方法，我們使用[Cheerio](https://www.npmjs.com/package/cheerio)，一個在伺服器端使用 jQuery 的函式庫來爬取網頁。 然而，網站現在變得越來越複雜，通常常規的 HTTP 爬行已經不夠了，但需要一個成熟的瀏覽器引擎才能從網站獲取必要的資訊。 對於嚴重依賴 JavaScript 以及動態和非同步資源的單頁應用程式來說尤其如此。 瀏覽器自動化和headless瀏覽器可以解決這些問題。 因此，我們使用 [Puppeteer](https://pptr.dev/) 以程式方式操作瀏覽器。 對於本次示範的案例，我們根據目標頁面的實際情況使用其中一種方式。
+
+此外，我們還提供 **iOS** 和 **Android** 行動應用程式用於網頁抓取示範。 這些應用程式是使用**React Native** 開發的，任何有興趣的人都可以透過**[Expo Publish Link](https://exp.host/@jglchen/web-scrape)** 使用 [Expo Go](https://expo.dev/client) 測試應用程式。

@@ -1,0 +1,28 @@
+---
+title: '即時股票報價展示'
+description: '利用瀏覽器 EventSource API 建立即時 React 應用程式的展示'
+source: 'https://github.com/jglchen/realtime-stock-next'
+docker: 'docker run -p 3000:3000 jglchen/realtime-stock-next'
+siteimg: 'pc-realtime-stock-next.png'
+locale: 'zh-tw'
+tags:
+  - Reactjs
+  - EventSource
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - reactjs
+  - nextjs
+  - docker
+  - restapi
+priority: 120
+---
+
+有很多方法可以實現網路上的即時內容更新。 Long-polling、web sockets 和 server-side events 都是建立即時更新的流行方式。 透過long-polling，HTTP 請求會依照預先定義的時間間隔定期向伺服器發出。 在 server-side events 中，瀏覽器的 event source API 用於開啟用戶端和伺服器之間的通訊通道，以便更新從伺服器流到客戶端。 Web socket 協定在用戶端和伺服器之間開啟雙向通訊通道，以允許更新以雙向方式移動。
+
+此示範將利用 **[the browser EventSource API](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)** 建立即時 React 應用程式。
+
+1. 本應用程式旨在展示即時股票報價。 每10秒更新一次隨機選擇的股票報價。
+2. 在本示範中，更新後的股價是隨機數計算的直接結果，與實際報價無關。

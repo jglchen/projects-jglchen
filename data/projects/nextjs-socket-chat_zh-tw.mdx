@@ -1,0 +1,27 @@
+---
+title: '使用 Socket.IO 的聊天應用程式'
+description: '展示用以 Next.js 和 Socket.IO 建立的即時聊天應用程式'
+source: 'https://github.com/jglchen/nextjs-socket-chat'
+docker: 'docker run -p 3000:3000 jglchen/nextjs-socket-chat'
+siteimg: 'pc-nextjs-socket-chat.png'
+locale: 'zh-tw'
+tags:
+  - Reactjs
+  - Nextjs
+  - Socket-IO
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - docker
+  - restapi
+priority: 130
+---
+
+有很多方法可以實現網路上的即時內容更新。 Long-polling、web sockets 和 server-side events 都是建立即時更新的流行方式。 透過long-polling，HTTP 請求會依照預先定義的時間間隔定期向伺服器發出。 在 server-side events 中，瀏覽器的 event source API 用於開啟用戶端和伺服器之間的通訊通道，以便更新從伺服器流到客戶端。 Web socket 協定在用戶端和伺服器之間開啟雙向通訊通道，以允許更新以雙向方式移動。
+
+此即時聊天應用程式是使用**[Next.js](https://nextjs.org/)** 建立的，並使用**[Socket.IO](https://socket.io/)**進行展示。

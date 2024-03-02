@@ -1,36 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Build Applications from Website to Mobile - John Chen's Professional Profile
 
-## Getting Started
+This is a **[Next.js](https://nextjs.org/)** framework site to illustrate John Chen's professional profile.
 
-First, run the development server:
+Next.js has two different routers: the App Router and the Pages Router. For this project the newly developed **App Router** is adopted, therefore we can use several latest features, such as server components, streaming, server actions, etc. The pages are styled with Tailwind CSS. A theme toggling mechanism is included for users to switch between light theme and dark theme. A theme toggling mechanism is included for users to switch between the light theme and the dark theme. In addition, a bilingual selection is provided for the pages, users can freely choose either English or traditional Chinese to view.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### [View the Site](https://projects-jglchen.vercel.app/)
+### [App GitHub](https://github.com/jglchen/projects-jglchen)
+### Docker: docker run -p 3000:3000 jglchen/projects-jglchen

@@ -1,0 +1,45 @@
+---
+title: 'Laravel Chirper API 後端 與 Next.js 前端'
+description: '本專案嘗試使用 Laravel Chirper API 作為後端，並使用 Next.js 作為瀏覽器前端以設定 Web 頁面顯示和身份驗證。'
+source: 'https://github.com/jglchen/chirper-api-w-next'
+docker: 'docker run -it -p 8000:8000 jglchen/chirper-api php artisan serve --host=0.0.0.0 (server site) | docker run -p 3000:3000 jglchen/chirper-next (client site)'
+siteimg: 'pc-chirper-api-w-next.png'
+locale: 'zh-tw'
+tags:
+  - PHP
+  - Laravel
+  - Reactjs
+  - Nextjs
+  - Tailwind_CSS
+  - Theme_Toggling
+  - Chirper
+skills:
+  - css
+  - tailwindcss
+  - html5
+  - javascript
+  - typescript
+  - reactjs
+  - nextjs
+  - sql
+  - mysql
+  - docker
+  - restapi
+  - php
+  - laravel
+priority: 177
+---
+
+[The Laravel Bootcamp](https://bootcamp.laravel.com/) 展示了[使用 Blade](https://bootcamp.laravel.com/blade/installation)、[使用 Livewire](https://bootcamp.laravel.com/livewire/installation) 以及[使用 JavaScript 和 Inertia](https://bootcamp.laravel.com/inertia/installation) 建立名為 Chirper 的微型部落格平台的三種不同方法。
+
+本專案嘗試**使用 Laravel Chirper API 作為後端，並使用 Next.js 作為瀏覽器前端以設定 Web 頁面顯示和身份驗證**。
+Laravel Chirper API 包括 Laravel Breeze API，它是個簡單小型的程式集，執行 Laravel 所有的身份驗證功能，包括登入、註冊、密碼重設、電子郵件驗證和密碼確認。
+Laravel Sanctum 被 Laravel Breeze 引用以提供身份驗證系統。
+除了 API 符記之外，Sanctum 還提供了一種簡單的方法來驗證需要與 Laravel 支援的 API 進行溝通的單頁應用程式 (SPA)。
+為此，Sanctum 使用 Laravel 內建的以 cookie 為基礎的期間驗證服務。
+
+本專案基本上遵循Laravel Bootcamp 所展示的構思，並添加了一些額外的功能，如下所示：
+- Chirper 顯示網頁載入了捲動分頁機制。
+- Chirper 頁面載入後將定期更新內容。
+- 提供用戶追蹤和取消追蹤其他用戶的機制。
+- Laravel Bootcamp 展示過當用戶建立一則 Chirp 時系統會發送電子郵件通知給其他用戶的機制，在本專案中，我們將電子郵件通知限制為僅向該用戶的追蹤者發送。

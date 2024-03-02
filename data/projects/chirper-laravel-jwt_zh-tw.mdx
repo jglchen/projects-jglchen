@@ -1,0 +1,43 @@
+---
+title: 'Laravel Chirper API JWT 身份驗證 與 Next.js 前端'
+description: '本專案嘗試使用 Laravel JWT API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端。'
+source: 'https://github.com/jglchen/chirper-laravel-jwt'
+docker: 'docker run -it -p 8000:8000 jglchen/chirper-api-jwt php artisan serve --host=0.0.0.0 (server site) | docker run -p 3000:3000 jglchen/chirper-next-jwt (client site)'
+siteimg: 'pc-chirper-laravel-jwt.png'
+locale: 'zh-tw'
+tags:
+  - PHP
+  - Laravel
+  - Reactjs
+  - Nextjs
+  - JWT-Authentication
+  - Tailwind_CSS
+  - Theme_Toggling
+  - Chirper
+skills:
+  - css
+  - tailwindcss
+  - html5
+  - javascript
+  - typescript
+  - reactjs
+  - nextjs
+  - sql
+  - mysql
+  - docker
+  - restapi
+  - php
+  - laravel
+priority: 172
+---
+
+[The Laravel Bootcamp](https://bootcamp.laravel.com/) 展示了[使用 Blade](https://bootcamp.laravel.com/blade/installation)、[使用 Livewire](https://bootcamp.laravel.com/livewire/installation) 以及[使用 JavaScript 和 Inertia](https://bootcamp.laravel.com/inertia/installation) 建立名為 Chirper 的微型部落格平台的三種不同方法。
+
+本專案嘗試**使用 Laravel JWT API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端**。JWT API 被引入以提供身份驗證系統。
+當使用 API 符記發出請求時，符記應作為 Bearer 符記被包含在授權(Authorization)標頭中。Next.js React 前端網頁採用 Tailwind CSS 來進行樣式設計，並遵循 Laravel Breeze 的預設視圖設計。
+
+本專案基本上遵循Laravel Bootcamp 所展示的構思，並添加了一些額外的功能，如下所示：
+- Chirper 顯示網頁載入了捲動分頁機制。
+- Chirper 頁面載入後將定期更新內容。
+- 提供用戶追蹤和取消追蹤其他用戶的機制。
+- Laravel Bootcamp 展示過當用戶建立一則 Chirp 時系統會發送電子郵件通知給其他用戶的機制，在本專案中，我們將電子郵件通知限制為僅向該用戶的追蹤者發送。

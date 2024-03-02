@@ -1,0 +1,30 @@
+---
+title: '使用 GraphQL 的 Hackernews 複製網站（包括 GraphQL 訂閱）'
+description: 'next.js 建立的 Hackernews 複製網站，採用 GraphQL API，前端使用 Apollo Client，後端伺服器使用 GraphQL Yoga。 GraphQL 伺服器的完整功能（包括查詢、突變和訂閱）均在此應用程式中使用。'
+source: 'https://github.com/jglchen/hackernews-nextjs-graphql-sse'
+docker: 'docker run -p 3000:3000 jglchen/hackernews-nextjs-graphql-sse'
+siteimg: 'pc-hackernews-nextjs-apollo.png'
+locale: 'zh-tw'
+tags:
+  - Reactjs
+  - Nextjs
+  - GraphQL
+  - Apollo
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - docker
+  - graphql
+priority: 175
+---
+
+這是一個使用 next.js 建構的使用 GraphQL API 建構的 [Hackernews](https://news.ycombinator.com/) 複製網站，前端採用 Apollo Client，後端伺服器採用 GraphQL Yoga。
+
+訂閱是一項 GraphQL 功能，可讓伺服器在特定事件發生時向客戶端發送資料。 訂閱通常使用 [WebSockets](https://en.wikipedia.org/wiki/WebSocket) 或 [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events）。 GraphQL Yoga 使用伺服器發送事件作為訂閱協定。
+
+然而，一旦將套件部署到 Vercel（一個無伺服器平台），訂閱的即時通訊就無法正常運作。 我們不會將此程式包部署到 Vercel，但是，我們已準備好此應用程式的 docker 化程式包。

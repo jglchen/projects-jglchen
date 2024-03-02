@@ -1,0 +1,40 @@
+---
+title: 'Laravel Breeze API 後端 與 Next.js 前端'
+description: '本專案嘗試使用 Laravel Breeze API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端。'
+source: 'https://github.com/jglchen/breeze-api-w-next'
+docker: 'docker run -it -p 8000:8000 jglchen/breeze-api php artisan serve --host=0.0.0.0 (server site) | docker run -p 3000:3000 jglchen/breeze-next (client site)'
+siteimg: 'pc-breeze-api-w-next.png'
+locale: 'zh-tw'
+tags:
+  - PHP
+  - Laravel
+  - Reactjs
+  - Nextjs
+  - Tailwind_CSS
+  - Theme_Toggling
+skills:
+  - css
+  - tailwindcss
+  - html5
+  - javascript
+  - typescript
+  - reactjs
+  - nextjs
+  - sql
+  - mysql
+  - docker
+  - restapi
+  - php
+  - laravel
+priority: 170
+---
+
+Laravel Breeze 執行 Laravel 所有的身份驗證功能，包括登入、註冊、密碼重設、電子郵件驗證和密碼確認。Breeze 包括一個簡單的「個人資料」頁面，使用者可以在其中更新其姓名、電子郵件地址和密碼。
+
+Laravel Breeze 的預設視圖層包含使用 Tailwind CSS 進行樣式設計的簡單 Blade 樣本。或者，Breeze 可以使用 Vue 或 React 配合 Inertia 來架構其應用程式。
+Laravel Breeze 也可以建立一個身份驗證 API，針對 Next 等現代 JavaScript 應用程式進行身份驗證。
+
+本專案嘗試**使用 Laravel Breeze API 作為後端以為設定身份驗證之用，並使用 Next.js 作為瀏覽器前端**。Laravel Sanctum 被 Laravel Breeze 引入以提供身份驗證系統。
+除了 API 符記之外，Sanctum 還提供了一種簡單的方法來驗證需要與 Laravel 支援的 API 進行通訊的單頁應用程式 (SPA)。
+為此，Sanctum 使用 Laravel 內建的基於 cookie 的期間驗證服務。
+Next.js React 前端網頁採用 Tailwind CSS 來進行樣式設計，並遵循 Laravel Breeze 的預設視圖設計。

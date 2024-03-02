@@ -1,0 +1,40 @@
+---
+title: '使用 Cloud Firestore 的聊天應用程式'
+description: '使用 Firebase Cloud FireStore 與 Next.js 進行的即時聊天應用程式'
+siteurl: 'https://firestore-realtime-chat.vercel.app'
+source: 'https://github.com/jglchen/firestore-realtime-chat'
+nativepub: 'https://exp.host/@jglchen/firestore-realtime-chat'
+nativesource: 'https://github.com/jglchen/firestore-realtime-chat-mobile'
+docker: 'docker run -p 3000:3000 jglchen/firestore-realtime-chat'
+siteimg: 'pc-firestore-realtime-chat.png'
+mobileimg: 'm-firestore-realtime-chat.png'
+locale: 'zh-tw'
+tags:
+  - Firebase
+  - Firestore
+  - Reactjs
+  - Nextjs
+  - React_Native
+skills:
+  - css
+  - html5
+  - javascript
+  - typescript
+  - nodejs
+  - reactjs
+  - nextjs
+  - react-native
+  - firebase
+  - docker
+  - restapi
+priority: 140
+---
+
+我們可以成功地在[Next.js](https://nextjs.org/)使用[Socket.IO](https://socket.io/)建立一個即時聊天應用程式。 然而，一旦將套件部署到 Vercel（一個無伺服器平台），即時通訊就無法正常運作。 Vercel 提出了兩種將即時模型應用於無狀態無伺服器函數(stateless serverless functions)的主要方法。
+
+1. 無伺服器函數(Serverless Functions)具有最大執行時間限制，並且應盡快回應。 他們不應該訂閱數據事件(data events)。 相反，我們需要一個訂閱資料事件(data events)的客戶端（例如 [Alby](https://ously.com/)、[Pusher](https://pusher.com/) 等）和一個無伺服器函數發布新數據。
+2. 我們可以按需獲取即時數據，而不是推送數據。 例如，Vercel 儀表板使用 [SWR](https://swr.vercel.app/) 提供即時更新。
+
+在此範例，我們使用 [Firebase Cloud FireStore](https://firebase.google.com/products/firestore) 建立即時聊天應用程式。
+
+同時也提供 **iOS** 和 **Android** 行動應用程式。 這些應用程式是使用 **React Native** 開發的，任何有興趣的人都可以透過 [Expo Publish Link](https://expo.dev/@jglchen/firestore-realtime-chat) 使用 [Expo Go](https://expo.dev/client) 測試應用程式。
