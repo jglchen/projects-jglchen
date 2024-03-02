@@ -40,6 +40,10 @@ export async function generateMetadata({
       },
       shortcut: { url: "/images/profile.jpg", type: "image/png" },
     },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+    },
   };
 }
 
