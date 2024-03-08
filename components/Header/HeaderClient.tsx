@@ -35,6 +35,9 @@ const Header = ({headerData, headTitle, locale}: Props) => {
   });
 
   const usePathName = usePathname();
+  useEffect(() => {
+    setNavigationOpen(false);
+  },[usePathName]);
   const pathName = usePathName.replace(`${locale}/`,'').replace(`${locale}`,'');
 
   return (
