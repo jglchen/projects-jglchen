@@ -42,10 +42,10 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
           </h4>
         </div>
         )}
-        <h2 className="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto mb-4">
+        <h2 className="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto mb-4 px-4">
           {subtitle}{tag ? ` - ${tag.replace(/_/g,' ')}`: ''}
         </h2>
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p>
+        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%] px-4">{description}</p>
       </motion.div>
       {/* <!-- Section Title End --> */}
     </>
