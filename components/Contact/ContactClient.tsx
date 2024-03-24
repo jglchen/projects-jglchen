@@ -107,9 +107,7 @@ const ContactClient = ({contactPage, locale}: Props) => {
     }
 
     setPending(true);
-    
     const result = await sendMessage(formObj, locale, contactPage.MsgAppreciate, contactPage.HeadTitle);
-    
     setPending(false);
     if (result.status === 'success'){
       formReset();
