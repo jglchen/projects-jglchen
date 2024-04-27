@@ -11,6 +11,8 @@ export const Project = defineDocumentType(() => ({
     source: { type: 'string', required: true },
     nativepub: { type: 'string' },
     nativesource: { type: 'string' },
+    iosbuild: { type: 'string' },
+    androidbuild: { type: 'string' },
     docker: { type: 'string', required: true },
     siteimg: { type: 'string', required: true },
     mobileimg: { type: 'string' },

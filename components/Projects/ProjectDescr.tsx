@@ -10,7 +10,7 @@ type Props = {
 }
 
 const ProjectDescr = ({project, locale}: Props) => {
-    const { title, description, siteurl, appurl, source, nativepub, nativesource, siteimg, mobileimg, docker, tags, body } = project;
+    const { title, description, siteurl, appurl, source, nativepub, iosbuild, androidbuild, nativesource, siteimg, mobileimg, docker, tags, body } = project;
     const t = useTranslations();
 
     function getStyledHtml(str: string){
@@ -32,6 +32,8 @@ const ProjectDescr = ({project, locale}: Props) => {
          {appurl && <TagButton text={t('ProjectPage.ViewApp')} href={appurl} blank/>}
          {source && <TagButton text={t('ProjectPage.GitHub')} href={source} blank/>}
          {nativepub && <TagButton text={t('ProjectPage.Expo')} href={nativepub} blank/>}
+         {iosbuild && <TagButton text={t('ProjectPage.iOS')} href={iosbuild} blank/>}
+         {androidbuild && <TagButton text={t('ProjectPage.Andriod')} href={androidbuild} blank/>}
          {nativesource && <TagButton text={t('ProjectPage.GitHubMobile')} href={nativesource} blank/>}
         </div>
         
