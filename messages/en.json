@@ -74,6 +74,9 @@
     "title": "Software Skills",
     "description": "The software skills I am familiar with web and mobile development. You can click selecting a skill to display the project works using the technology."
   },
+  "MobilePage": {
+    "title": "Mobile Applications"
+  },
   "Error": {
     "title": "Something went wrong!",
     "description": "We've unfortunately encountered an error.\nYou can try to reload the page you were visiting."
