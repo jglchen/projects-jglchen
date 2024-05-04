@@ -3,8 +3,9 @@ title: 'Hackernews Clone - Apollo GraphQL'
 description: 'A Hackernews clone site built with next.js implementing GraphQL APIs and Firebase Cloud Firestore to substitute GraphQL subscriptions.'
 siteurl: 'https://hackernews-nextjs-apollo.vercel.app'
 source: 'https://github.com/jglchen/hackernews-nextjs-apollo'
-nativepub: 'https://exp.host/@jglchen/hackernews-apollo'
 nativesource: 'https://github.com/jglchen/react-native-hackernews-apollo'
+iosbuild: 'https://expo.dev/accounts/jglchen/projects/hackernews-apollo/builds/b6aa3b39-e2ec-48cd-89f5-14028feff519'
+androidbuild: 'https://expo.dev/accounts/jglchen/projects/hackernews-apollo/builds/5b979dee-6874-48a8-ade1-231a750eca9c'
 docker: 'docker run -p 3000:3000 jglchen/hackernews-nextjs-apollo'
 siteimg: 'pc-hackernews-nextjs-apollo.png'
 mobileimg: 'm-hackernews-apollo.png'
@@ -36,5 +37,4 @@ This is a [Hackernews](https://news.ycombinator.com/) clone site built with **ne
 
 The real-time communication of subscriptions however was found not to function well once the package is deployed to Vercel, which is a serverless platform. Therefore real-time [Firebase Cloud Firestore](https://firebase.google.com/products/firestore) is used to substitute GraphQL subscriptions.
 
-
-In addition, **iOS** and **Android** mobile apps are also delivered for the clone site. The apps are developed with **React Native**, anyone who is interested can test the apps through **[the Expo Publish Link](https://exp.host/@jglchen/hackernews-apollo)** as above with **[Expo Go](https://expo.dev/client)** app.
+In addition, **iOS** and **Android** mobile apps are also delivered. The apps are developed with **React Native**, anyone who is interested can test the development builds with [iOS Simulator Build](https://expo.dev/accounts/jglchen/projects/hackernews-apollo/builds/b6aa3b39-e2ec-48cd-89f5-14028feff519) and [Android Internal Distribution Build](https://expo.dev/accounts/jglchen/projects/hackernews-apollo/builds/5b979dee-6874-48a8-ade1-231a750eca9c). If the build storage link has expired, please go to [https://projects-jglchen.vercel.app/en/contact](https://projects-jglchen.vercel.app/en/contact) to request build files.
