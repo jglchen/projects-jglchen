@@ -3,8 +3,9 @@ title: 'Firebase 驗證展示'
 description: '使用簽署和加密的 cookie 來儲存作業期間數據的 Firebase 身份驗證系統'
 siteurl: 'https://firebase-auth-rust.vercel.app'
 source: 'https://github.com/jglchen/firebase-auth'
-nativepub: 'https://exp.host/@jglchen/firebase-auth'
 nativesource: 'https://github.com/jglchen/react-native-firebase-auth'
+iosbuild: 'https://expo.dev/accounts/jglchen/projects/firebase-auth/builds/da8ba431-1739-4dd2-8735-2a2a65836d18'
+androidbuild: 'https://expo.dev/accounts/jglchen/projects/firebase-auth/builds/987f6f8c-d8bd-41f0-95d0-43be634e3bf2'
 docker: 'docker run -p 3000:3000 jglchen/firebase-auth'
 siteimg: 'pc-firebase-auth.png'
 mobileimg: 'm-firebase-auth.png'
@@ -32,8 +33,8 @@ priority: 160
 
 此範例建立一個身份驗證系統，該系統使用簽署和加密的 cookie 來儲存作業期間資料。 它使用當前最佳作業準則Next.js 生態系統中的身份驗證，我們使用**useUser** custom hook和**[SWR](https://swr.vercel.app/)** 來獲取數據。
 
-* 使用電子郵件/密碼、Google 登入、Facebook 登入、GitHub 登入和電子郵件登入的 Firebase 驗證以用於對使用者進行身份驗證。
+* 使用電子郵件/密碼、Google 登入、GitHub 登入和電子郵件登入的 Firebase 驗證以用於對使用者進行身份驗證。
 * 在 Firebase 驗證中註冊的電子郵件保存在單獨的資料庫中，以供個人用戶將來進行資料開發，在此範例中為 Firestore 資料庫。
 * 作業期間資料在 cookie 中簽署和加密。
 
-同時也提供 **iOS** 和 **Android** 行動應用程式。 這些應用程式是使用 **React Native** 開發的，任何有興趣的人都可以透過 [Expo Publish Link](https://exp.host/@jglchen/firebase-auth) 使用 [Expo Go](https://expo.dev/client) 測試應用程式。
+同時也提供 **iOS** 和 **Android** 行動應用程式。 這些應用程式是使用 **React Native** 開發的，任何有興趣的人都可以使用[iOS Simulator Build](https://expo.dev/accounts/jglchen/projects/firebase-auth/builds/da8ba431-1739-4dd2-8735-2a2a65836d18) 和 [Android Internal Distribution Build](https://expo.dev/accounts/jglchen/projects/firebase-auth/builds/987f6f8c-d8bd-41f0-95d0-43be634e3bf2)來測試開發版本。如果發現連結檔案儲存已過期，請前往[https://projects-jglchen.vercel.app/zh-tw/contact](https://projects-jglchen.vercel.app/zh-tw/contact)索取建置檔案。
