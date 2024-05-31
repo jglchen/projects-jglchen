@@ -4,8 +4,8 @@ type MobileApp = {
 }
 
 const mobileData: MobileApp = {
-    ios: 'https://expo.dev/accounts/jglchen/projects/projects-jglchen/builds/d44a7ea2-5f1b-48fd-a3f2-930b47900593',
-    android: 'https://expo.dev/accounts/jglchen/projects/projects-jglchen/builds/fc78589f-ab98-4961-9cf0-7cc5629b3505',
+    ios: 'https://expo.dev/accounts/jglchen/projects/projects-jglchen/builds/05e970e6-dfc6-434a-9a95-a9161b872a1c',
+    android: 'https://expo.dev/accounts/jglchen/projects/projects-jglchen/builds/fe31f009-3fa3-4e57-8ecd-be1cfe2fa1e6',
 };
   
 
